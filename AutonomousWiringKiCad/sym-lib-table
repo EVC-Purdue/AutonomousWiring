@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ev_kart")(type "KiCad")(uri "${KIPRJMOD}/ev_kart.kicad_sym")(options "")(descr ""))
+)
