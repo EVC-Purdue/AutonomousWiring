@@ -359,8 +359,8 @@
 		)
 		(symbol "ev_contactor_node_0_1"
 			(rectangle
-				(start -7.62 -2.54)
-				(end 7.62 -10.16)
+				(start -5.08 -2.54)
+				(end 5.08 -10.16)
 				(stroke
 					(width 0)
 					(type default)
@@ -372,7 +372,7 @@
 		)
 		(symbol "ev_contactor_node_1_1"
 			(pin power_in line
-				(at 10.16 -3.81 180)
+				(at -7.62 -3.81 0)
 				(length 2.54)
 				(name "IN"
 					(effects
@@ -389,10 +389,10 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 10.16 -6.35 180)
+			(pin input line
+				(at -7.62 -6.35 0)
 				(length 2.54)
-				(name "Out"
+				(name "Control"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -407,10 +407,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at 10.16 -8.89 180)
+			(pin power_out line
+				(at -7.62 -8.89 0)
 				(length 2.54)
-				(name "Control"
+				(name "Out"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -477,8 +477,8 @@
 		)
 		(symbol "ev_dcdc_12v_0_1"
 			(rectangle
-				(start -7.62 -1.27)
-				(end 7.62 -8.89)
+				(start -5.08 -1.27)
+				(end 5.08 -8.89)
 				(stroke
 					(width 0)
 					(type default)
@@ -490,7 +490,7 @@
 		)
 		(symbol "ev_dcdc_12v_1_1"
 			(pin power_in line
-				(at -10.16 -2.54 0)
+				(at -2.54 -11.43 90)
 				(length 2.54)
 				(name "HV_in"
 					(effects
@@ -526,7 +526,7 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 -2.54 180)
+				(at 2.54 -11.43 90)
 				(length 2.54)
 				(name "12v"
 					(effects
@@ -595,8 +595,8 @@
 		)
 		(symbol "ev_dcdc_5v_0_1"
 			(rectangle
-				(start -7.62 -1.27)
-				(end 7.62 -8.89)
+				(start -5.08 -1.27)
+				(end 5.08 -8.89)
 				(stroke
 					(width 0)
 					(type default)
@@ -608,7 +608,7 @@
 		)
 		(symbol "ev_dcdc_5v_1_1"
 			(pin power_in line
-				(at -10.16 -2.54 0)
+				(at -7.62 -2.54 0)
 				(length 2.54)
 				(name "12v_in"
 					(effects
@@ -626,7 +626,7 @@
 				)
 			)
 			(pin power_out line
-				(at 0 -11.43 90)
+				(at -7.62 -5.08 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -644,7 +644,7 @@
 				)
 			)
 			(pin power_out line
-				(at 10.16 -2.54 180)
+				(at -7.62 -7.62 0)
 				(length 2.54)
 				(name "5v"
 					(effects
@@ -782,6 +782,214 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "ev_eth_switch"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "ev_eth_switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "ev_eth_switch_0_1"
+			(rectangle
+				(start -7.62 -2.54)
+				(end 7.62 -17.78)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "ev_eth_switch_1_1"
+			(pin power_in line
+				(at -10.16 -3.81 0)
+				(length 2.54)
+				(name "PWR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -6.35 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -3.81 180)
+				(length 2.54)
+				(name "ETH1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -6.35 180)
+				(length 2.54)
+				(name "ETH2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -8.89 180)
+				(length 2.54)
+				(name "ETH3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -11.43 180)
+				(length 2.54)
+				(name "ETH4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -13.97 180)
+				(length 2.54)
+				(name "ETH5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -16.51 180)
+				(length 2.54)
+				(name "ETH6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "ev_nucleo"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -831,8 +1039,8 @@
 		)
 		(symbol "ev_nucleo_0_1"
 			(rectangle
-				(start -7.62 -1.27)
-				(end 7.62 -30.48)
+				(start -12.7 -1.27)
+				(end 12.7 -50.8)
 				(stroke
 					(width 0)
 					(type default)
@@ -843,8 +1051,8 @@
 			)
 		)
 		(symbol "ev_nucleo_1_1"
-			(pin free line
-				(at 10.16 -2.54 180)
+			(pin unspecified line
+				(at 15.24 -2.54 180)
 				(length 2.54)
 				(name "USB"
 					(effects
@@ -862,7 +1070,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -5.08 180)
+				(at 15.24 -5.08 180)
 				(length 2.54)
 				(name "SPI_NSS"
 					(effects
@@ -880,7 +1088,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -7.62 180)
+				(at 15.24 -7.62 180)
 				(length 2.54)
 				(name "SPI_CLK"
 					(effects
@@ -898,7 +1106,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -10.16 180)
+				(at 15.24 -10.16 180)
 				(length 2.54)
 				(name "SPI_MOSI"
 					(effects
@@ -916,7 +1124,7 @@
 				)
 			)
 			(pin output line
-				(at 10.16 -12.7 180)
+				(at 15.24 -12.7 180)
 				(length 2.54)
 				(name "SPI_MISO"
 					(effects
@@ -934,7 +1142,7 @@
 				)
 			)
 			(pin power_in line
-				(at 10.16 -15.24 180)
+				(at 15.24 -15.24 180)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -951,10 +1159,28 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 10.16 -17.78 180)
+			(pin output line
+				(at 15.24 -17.78 180)
 				(length 2.54)
-				(name "GND"
+				(name "VESC_PWM"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 -20.32 180)
+				(length 2.54)
+				(name "VESC_UART_TX"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -970,7 +1196,133 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -20.32 180)
+				(at 15.24 -22.86 180)
+				(length 2.54)
+				(name "VESC_UART_RX"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 15.24 -25.4 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 -27.94 180)
+				(length 2.54)
+				(name "Servo_PWM"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 15.24 -30.48 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 -33.02 180)
+				(length 2.54)
+				(name "Contactor_CTRL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 -35.56 180)
+				(length 2.54)
+				(name "Contactor_Feedback_O"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 -38.1 180)
+				(length 2.54)
+				(name "Contactor_Feedback_I"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 -40.64 180)
 				(length 2.54)
 				(name "Contactor_PWM"
 					(effects
@@ -987,26 +1339,8 @@
 					)
 				)
 			)
-			(pin output line
-				(at 10.16 -22.86 180)
-				(length 2.54)
-				(name "Contactor_GPIO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 10.16 -25.4 180)
+			(pin input line
+				(at 15.24 -43.18 180)
 				(length 2.54)
 				(name "Throttle_PWM"
 					(effects
@@ -1023,10 +1357,28 @@
 					)
 				)
 			)
-			(pin output line
-				(at 10.16 -27.94 180)
+			(pin input line
+				(at 15.24 -45.72 180)
 				(length 2.54)
 				(name "Steering_PWM"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 -48.26 180)
+				(length 2.54)
+				(name "Mode_PWM"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1094,7 +1446,7 @@
 		(symbol "ev_rc_reciever_0_1"
 			(rectangle
 				(start -7.62 -2.54)
-				(end 7.62 -10.16)
+				(end 7.62 -17.78)
 				(stroke
 					(width 0)
 					(type default)
@@ -1105,10 +1457,82 @@
 			)
 		)
 		(symbol "ev_rc_reciever_1_1"
+			(pin output line
+				(at -10.16 -8.89 0)
+				(length 2.54)
+				(name "Contactor_PWM"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -10.16 -11.43 0)
+				(length 2.54)
+				(name "Throttle_PWM"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -10.16 -13.97 0)
+				(length 2.54)
+				(name "Steering_PWM"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -10.16 -16.51 0)
+				(length 2.54)
+				(name "Mode_PWM"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
 				(at 10.16 -3.81 180)
 				(length 2.54)
-				(name "PWR"
+				(name "5v+"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1127,24 +1551,6 @@
 				(at 10.16 -6.35 180)
 				(length 2.54)
 				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 10.16 -8.89 180)
-				(length 2.54)
-				(name "Contactor_PWM"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1212,7 +1618,7 @@
 		(symbol "ev_rubik_0_1"
 			(rectangle
 				(start -7.62 -2.54)
-				(end 7.62 -15.24)
+				(end 7.62 -25.4)
 				(stroke
 					(width 0)
 					(type default)
@@ -1241,10 +1647,28 @@
 					)
 				)
 			)
-			(pin free line
+			(pin unspecified line
 				(at -10.16 -6.35 0)
 				(length 2.54)
 				(name "USB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -10.16 -8.89 0)
+				(length 2.54)
+				(name "ETH"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1333,6 +1757,78 @@
 			)
 			(pin output line
 				(at 10.16 -13.97 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 -16.51 180)
+				(length 2.54)
+				(name "5v+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 -19.05 180)
+				(length 2.54)
+				(name "UART_TX"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 -21.59 180)
+				(length 2.54)
+				(name "UART_RX"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 -24.13 180)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1538,7 +2034,7 @@
 		(symbol "ev_vesc_0_1"
 			(rectangle
 				(start -8.89 -1.27)
-				(end 8.89 -13.97)
+				(end 8.89 -25.4)
 				(stroke
 					(width 0)
 					(type default)
@@ -1549,62 +2045,8 @@
 			)
 		)
 		(symbol "ev_vesc_1_1"
-			(pin power_out line
-				(at -11.43 -2.54 0)
-				(length 2.54)
-				(name "Phase1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at -11.43 -5.08 0)
-				(length 2.54)
-				(name "Phase2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at -11.43 -7.62 0)
-				(length 2.54)
-				(name "Phase3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
-				(at 11.43 -2.54 180)
+				(at -11.43 -2.54 0)
 				(length 2.54)
 				(name "HV+"
 					(effects
@@ -1622,7 +2064,7 @@
 				)
 			)
 			(pin power_in line
-				(at 11.43 -5.08 180)
+				(at -11.43 -5.08 0)
 				(length 2.54)
 				(name "HV-"
 					(effects
@@ -1639,10 +2081,28 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 11.43 -7.62 180)
+			(pin output line
+				(at -11.43 -7.62 0)
 				(length 2.54)
-				(name "5v+"
+				(name "UART_TX"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 -10.16 0)
+				(length 2.54)
+				(name "UART_RX"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1658,7 +2118,7 @@
 				)
 			)
 			(pin power_in line
-				(at 11.43 -10.16 180)
+				(at -11.43 -12.7 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1676,9 +2136,99 @@
 				)
 			)
 			(pin input line
-				(at 11.43 -12.7 180)
+				(at -11.43 -15.24 0)
 				(length 2.54)
 				(name "Throttle_PWM"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -11.43 -17.78 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -11.43 -20.32 0)
+				(length 2.54)
+				(name "5v+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 11.43 -17.78 180)
+				(length 2.54)
+				(name "Phase1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 11.43 -20.32 180)
+				(length 2.54)
+				(name "Phase2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 11.43 -22.86 180)
+				(length 2.54)
+				(name "Phase3"
 					(effects
 						(font
 							(size 1.27 1.27)
