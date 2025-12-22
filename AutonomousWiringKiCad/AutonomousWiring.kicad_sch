@@ -575,6 +575,88 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "ev_kart:ev_bullet"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "ev_bullet"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ev_bullet_0_1"
+				(rectangle
+					(start -5.08 -2.54)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "ev_bullet_1_1"
+				(pin bidirectional line
+					(at 7.62 -3.81 180)
+					(length 2.54)
+					(name "PoE_Eth"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ev_kart:ev_contactor"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -865,11 +947,11 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ev_kart:ev_dcdc_12v"
+		(symbol "ev_kart:ev_dcdc_24v"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "ev_dcdc_12v"
+			(property "Reference" "ev_dcdc_24v"
 				(at 0 0 0)
 				(effects
 					(font
@@ -912,10 +994,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "ev_dcdc_12v_0_1"
+			(symbol "ev_dcdc_24v_0_1"
 				(rectangle
-					(start -5.08 -1.27)
-					(end 5.08 -8.89)
+					(start -5.08 -2.54)
+					(end 5.08 -10.16)
 					(stroke
 						(width 0)
 						(type default)
@@ -925,9 +1007,9 @@
 					)
 				)
 			)
-			(symbol "ev_dcdc_12v_1_1"
+			(symbol "ev_dcdc_24v_1_1"
 				(pin power_in line
-					(at -2.54 -11.43 90)
+					(at -2.54 -12.7 90)
 					(length 2.54)
 					(name "HV_in"
 						(effects
@@ -945,7 +1027,7 @@
 					)
 				)
 				(pin power_out line
-					(at 0 -11.43 90)
+					(at 0 -12.7 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -963,9 +1045,9 @@
 					)
 				)
 				(pin power_out line
-					(at 2.54 -11.43 90)
+					(at 2.54 -12.7 90)
 					(length 2.54)
-					(name "12v"
+					(name "24v"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1047,7 +1129,7 @@
 				(pin power_in line
 					(at -7.62 -2.54 0)
 					(length 2.54)
-					(name "12v_in"
+					(name "24v_in"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1165,7 +1247,7 @@
 				(pin power_in line
 					(at -12.7 -3.81 0)
 					(length 2.54)
-					(name "DC_12v+"
+					(name "PWR"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1202,6 +1284,214 @@
 					(at 12.7 -5.08 180)
 					(length 2.54)
 					(name "USB-C_PD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ev_kart:ev_eth_switch"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "ev_eth_switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ev_eth_switch_0_1"
+				(rectangle
+					(start -7.62 -2.54)
+					(end 7.62 -17.78)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "ev_eth_switch_1_1"
+				(pin power_in line
+					(at -10.16 -3.81 0)
+					(length 2.54)
+					(name "PWR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 -6.35 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -3.81 180)
+					(length 2.54)
+					(name "ETH1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -6.35 180)
+					(length 2.54)
+					(name "ETH2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -8.89 180)
+					(length 2.54)
+					(name "ETH3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -11.43 180)
+					(length 2.54)
+					(name "ETH4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -13.97 180)
+					(length 2.54)
+					(name "ETH5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -16.51 180)
+					(length 2.54)
+					(name "ETH6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1608,6 +1898,142 @@
 					(at 15.24 -48.26 180)
 					(length 2.54)
 					(name "Mode_PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ev_kart:ev_poe_adp"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "ev_poe_adp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ev_poe_adp_0_1"
+				(rectangle
+					(start -7.62 -2.54)
+					(end 7.62 -10.16)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "ev_poe_adp_1_1"
+				(pin power_in line
+					(at -10.16 -3.81 0)
+					(length 2.54)
+					(name "24v_in"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 -6.35 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 -8.89 0)
+					(length 2.54)
+					(name "Eth"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -6.35 180)
+					(length 2.54)
+					(name "POE_Eth"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2349,7 +2775,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ev_vesc_1"
+		(symbol "ev_kart:ev_vesc"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2396,7 +2822,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ev_vesc_1_0_1"
+			(symbol "ev_vesc_0_1"
 				(rectangle
 					(start -8.89 -1.27)
 					(end 8.89 -25.4)
@@ -2409,7 +2835,7 @@
 					)
 				)
 			)
-			(symbol "ev_vesc_1_1_1"
+			(symbol "ev_vesc_1_1"
 				(pin power_in line
 					(at -11.43 -2.54 0)
 					(length 2.54)
@@ -2670,16 +3096,6 @@
 		)
 		(uuid "0eb88e92-3045-4b95-92f1-a36ee57819b9")
 	)
-	(text "Steering servo should get 24v not 12v"
-		(exclude_from_sim no)
-		(at 76.708 17.272 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "84338870-cfec-4549-be07-37f813ab92b1")
-	)
 	(text "Contactor pwm should have a purely electrical contactor control"
 		(exclude_from_sim no)
 		(at 100.076 166.624 0)
@@ -2889,6 +3305,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 91.44) (xy 222.25 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "133901e5-5248-4f97-9db6-de61031ae4a2")
+	)
+	(wire
+		(pts
 			(xy 113.03 73.66) (xy 67.31 73.66)
 		)
 		(stroke
@@ -2933,6 +3359,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 69.85) (xy 187.96 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1936286b-05d9-457b-88bb-86c2a1ea032d")
+	)
+	(wire
+		(pts
 			(xy 125.73 45.72) (xy 125.73 63.5)
 		)
 		(stroke
@@ -2944,6 +3380,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 72.39) (xy 222.25 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ebc5736-5b3e-4dc4-82b7-f74ac9eff58d")
+	)
+	(wire
+		(pts
 			(xy 80.01 45.72) (xy 90.17 45.72)
 		)
 		(stroke
@@ -2952,6 +3398,16 @@
 			(color 0 0 0 1)
 		)
 		(uuid "1ed95f26-c11e-4485-a2f9-10e383ebf973")
+	)
+	(wire
+		(pts
+			(xy 214.63 67.31) (xy 222.25 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22cf395d-2acf-4387-a88b-7e659751748e")
 	)
 	(wire
 		(pts
@@ -3131,6 +3587,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 91.44) (xy 247.65 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45f69238-824b-4126-8a09-29806844d501")
+	)
+	(wire
+		(pts
 			(xy 67.31 109.22) (xy 91.44 109.22)
 		)
 		(stroke
@@ -3183,6 +3649,16 @@
 			(color 208 135 112 1)
 		)
 		(uuid "4d081c11-ed0c-480a-8861-d0adab0271af")
+	)
+	(wire
+		(pts
+			(xy 194.31 69.85) (xy 187.96 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5361ec19-0ef9-4186-a4a3-253923084c62")
 	)
 	(wire
 		(pts
@@ -3271,6 +3747,16 @@
 			(color 191 97 106 1)
 		)
 		(uuid "58f643b1-e79e-443f-a748-4324d24907cf")
+	)
+	(wire
+		(pts
+			(xy 214.63 80.01) (xy 214.63 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63d5a2a5-bf53-4dae-acfe-75e47315a319")
 	)
 	(wire
 		(pts
@@ -3746,6 +4232,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 77.47) (xy 222.25 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4acae0b-e610-46e9-964f-9cefa5deb192")
+	)
+	(wire
+		(pts
 			(xy 90.17 119.38) (xy 95.25 119.38)
 		)
 		(stroke
@@ -3801,6 +4297,26 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 93.98) (xy 222.25 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc7073e9-f1bb-41c2-809b-9439f19d77be")
+	)
+	(wire
+		(pts
+			(xy 214.63 69.85) (xy 222.25 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc9c5eb3-ddd9-4a8c-ad1e-fcfdecdb3751")
+	)
+	(wire
+		(pts
 			(xy 124.46 66.04) (xy 124.46 144.78)
 		)
 		(stroke
@@ -3820,6 +4336,16 @@
 			(color 208 135 112 1)
 		)
 		(uuid "c1ba059c-fdc8-4e1d-9f70-b3bfefa0a3a2")
+	)
+	(wire
+		(pts
+			(xy 214.63 74.93) (xy 222.25 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1eb5a64-9525-4271-acec-aca59c71c43e")
 	)
 	(wire
 		(pts
@@ -4195,6 +4721,72 @@
 			)
 		)
 	)
+	(global_label "Eth Switch"
+		(shape output)
+		(at 69.85 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2da1c628-70d2-44b2-96e1-409ec633c93e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 56.7654 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Rubik 2"
+		(shape output)
+		(at 222.25 69.85 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4fcf0b39-5c74-445b-91ee-c850fed28113")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 232.6132 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Rubik 5"
+		(shape output)
+		(at 222.25 77.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5bb5353c-6581-438a-b6d2-bbe01a0d2e7d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 232.6132 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Motor Phase 3"
 		(shape output)
 		(at 151.13 132.08 0)
@@ -4208,6 +4800,72 @@
 		(uuid "8960b33a-e223-4fad-a3b8-752e6dc8600f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 168.2059 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Rubik 3"
+		(shape output)
+		(at 222.25 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "965bc780-bf77-4ce9-8985-cc452b4004f8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 232.6132 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Rubik 1"
+		(shape output)
+		(at 222.25 67.31 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ce5222da-5142-4f4e-b8c4-95a6909fedf1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 232.6132 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Rubik 4"
+		(shape output)
+		(at 222.25 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ee251063-ae5f-4e76-a883-38244f01bd9a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 232.6132 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4308,6 +4966,79 @@
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
 					(reference "KartOn1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ev_kart:ev_dcdc_24v")
+		(at 90.17 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "066166bc-a54e-4ead-be68-22648fc46bcd")
+		(property "Reference" "ev_dcdc_24v1"
+			(at 84.328 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 96.52 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 90.17 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "8a63d82e-c6e2-425c-9330-46120be78fb9")
+		)
+		(pin ""
+			(uuid "1a086630-3508-4339-aa99-928a8967f029")
+		)
+		(pin ""
+			(uuid "159ef970-3064-455c-bd05-987adadb2499")
+		)
+		(instances
+			(project ""
+				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
+					(reference "ev_dcdc_24v1")
 					(unit 1)
 				)
 			)
@@ -4494,6 +5225,80 @@
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
 					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ev_kart:ev_poe_adp")
+		(at 232.41 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15ef1a0a-d60c-4541-9642-0d35f1ed6b01")
+		(property "Reference" "ev_poe_adp1"
+			(at 232.41 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 232.41 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 232.41 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "fb39d488-bcf9-430f-a9ec-d9cdbf3e84a9")
+		)
+		(pin ""
+			(uuid "9aadcb0a-edeb-40b8-813a-cb35e080142d")
+		)
+		(pin ""
+			(uuid "ccf8a810-5950-42a7-b9a0-3aff7c0e02a9")
+		)
+		(pin ""
+			(uuid "f0266d8d-a5ce-4342-b984-855ad45e4fb6")
+		)
+		(instances
+			(project ""
+				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
+					(reference "ev_poe_adp1")
 					(unit 1)
 				)
 			)
@@ -4941,6 +5746,92 @@
 		)
 	)
 	(symbol
+		(lib_id "ev_kart:ev_eth_switch")
+		(at 204.47 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "77e3ddac-8fb1-4cfd-8d24-e94eac95239c")
+		(property "Reference" "ev_eth_switch1"
+			(at 204.47 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 204.47 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 204.47 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "d1eaffb7-5f69-4c19-91ef-75793ed2b7f7")
+		)
+		(pin ""
+			(uuid "e7cde0be-274b-4032-9a7b-255b1af1435b")
+		)
+		(pin ""
+			(uuid "fa613670-c3a6-43e3-b458-ef5c12cdef91")
+		)
+		(pin ""
+			(uuid "c4e12ab8-a3d0-46f3-8565-45f8187a77b3")
+		)
+		(pin ""
+			(uuid "ece9abc0-1aad-40b2-b87f-254be0cfb6ab")
+		)
+		(pin ""
+			(uuid "d9f41828-3616-4a40-9a23-b55c19531479")
+		)
+		(pin ""
+			(uuid "b08cfc86-7c14-40cd-be17-ea3eac8849ea")
+		)
+		(pin ""
+			(uuid "99c0a4ed-410a-4bfb-93db-341d05cf046a")
+		)
+		(instances
+			(project ""
+				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
+					(reference "ev_eth_switch1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ev_kart:ev_rtk_gps")
 		(at 110.49 95.25 0)
 		(unit 1)
@@ -5168,6 +6059,71 @@
 		)
 	)
 	(symbol
+		(lib_id "ev_kart:ev_bullet")
+		(at 255.27 95.25 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e33015d3-68b2-4e47-882d-2e920e9d44ec")
+		(property "Reference" "ev_bullet1"
+			(at 255.27 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 255.27 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 255.27 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "3e035448-2c2d-4bb3-bff8-49751c9fc403")
+		)
+		(instances
+			(project ""
+				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
+					(reference "ev_bullet1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ev_kart:ev_rubik")
 		(at 80.01 82.55 0)
 		(unit 1)
@@ -5266,77 +6222,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ev_kart:ev_dcdc_12v")
-		(at 90.17 31.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "edab196a-e721-4500-9857-11aa18e2010d")
-		(property "Reference" "ev_dcdc_12v2"
-			(at 90.678 31.496 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 90.17 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 90.17 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 90.17 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 90.17 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "8bf5b70a-9eeb-45b6-a26c-cd59770c6c41")
-		)
-		(pin ""
-			(uuid "5cf030fb-3672-438d-a446-177589a81107")
-		)
-		(pin ""
-			(uuid "08fe48ed-f230-4b04-8778-12bc59e9b0f1")
-		)
-		(instances
-			(project "AutonomousWiring"
-				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "ev_dcdc_12v2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_DPST_x2")
 		(at 107.95 38.1 0)
 		(unit 1)
@@ -5411,7 +6296,6 @@
 		)
 	)
 	(symbol
-		(lib_name "ev_vesc_1")
 		(lib_id "ev_kart:ev_vesc")
 		(at 139.7 114.3 0)
 		(unit 1)
