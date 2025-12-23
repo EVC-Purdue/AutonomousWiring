@@ -5226,7 +5226,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "044bc5fa-f522-4b82-a19a-1926d149c4d4")
-		(property "Reference" "KartOn1"
+		(property "Reference" "KartOn"
 			(at 57.15 35.052 0)
 			(effects
 				(font
@@ -5285,7 +5285,7 @@
 		(instances
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "KartOn1")
+					(reference "KartOn")
 					(unit 1)
 				)
 			)
@@ -5300,7 +5300,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "066166bc-a54e-4ead-be68-22648fc46bcd")
-		(property "Reference" "ev_dcdc_24v1"
+		(property "Reference" "ev_dcdc_24v"
 			(at 84.328 31.75 0)
 			(effects
 				(font
@@ -5358,7 +5358,7 @@
 		(instances
 			(project ""
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "ev_dcdc_24v1")
+					(reference "ev_dcdc_24v")
 					(unit 1)
 				)
 			)
@@ -5373,7 +5373,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0c8cf205-1941-4eef-b2cb-caa0ab140f9e")
-		(property "Reference" "ev_nucleo2"
+		(property "Reference" "ev_stm32"
 			(at 75.438 109.22 0)
 			(effects
 				(font
@@ -5477,7 +5477,7 @@
 		(instances
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "ev_nucleo2")
+					(reference "ev_stm32")
 					(unit 1)
 				)
 			)
@@ -5492,7 +5492,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "107cf40f-1bbe-4d00-8c9c-447d89270c9b")
-		(property "Reference" "F2"
+		(property "Reference" "F1"
 			(at 46.228 50.8 90)
 			(effects
 				(font
@@ -5544,7 +5544,7 @@
 		(instances
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "F2")
+					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -5559,7 +5559,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "15ef1a0a-d60c-4541-9642-0d35f1ed6b01")
-		(property "Reference" "ev_poe_adp1"
+		(property "Reference" "ev_poe_adp"
 			(at 86.36 52.07 0)
 			(effects
 				(font
@@ -5618,7 +5618,7 @@
 		(instances
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "ev_poe_adp1")
+					(reference "ev_poe_adp")
 					(unit 1)
 				)
 			)
@@ -5704,7 +5704,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1fee9e7d-a03c-44da-bd93-0179acf77155")
-		(property "Reference" "ev_dcdc_5v2"
+		(property "Reference" "ev_dcdc_5v"
 			(at 135.636 58.42 0)
 			(effects
 				(font
@@ -5760,7 +5760,7 @@
 		(instances
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "ev_dcdc_5v2")
+					(reference "ev_dcdc_5v")
 					(unit 1)
 				)
 			)
@@ -5775,7 +5775,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2a055b1a-6d92-40d4-9dab-aceccfc3845e")
-		(property "Reference" "ev_steering2"
+		(property "Reference" "ev_steering"
 			(at 90.424 19.05 0)
 			(effects
 				(font
@@ -5834,7 +5834,7 @@
 		(instances
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "ev_steering2")
+					(reference "ev_steering")
 					(unit 1)
 				)
 			)
@@ -5849,7 +5849,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3548122e-c64d-4b04-b8d8-0a4c934b2716")
-		(property "Reference" "ev_battery2"
+		(property "Reference" "ev_battery"
 			(at 22.352 70.866 0)
 			(effects
 				(font
@@ -5910,7 +5910,7 @@
 		(instances
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "ev_battery2")
+					(reference "ev_battery")
 					(unit 1)
 				)
 			)
@@ -5925,7 +5925,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4e8542ba-dc5c-41ec-b08c-474c545853b0")
-		(property "Reference" "ev_contactor2"
+		(property "Reference" "ev_contactor"
 			(at 39.116 134.366 0)
 			(effects
 				(font
@@ -5992,7 +5992,7 @@
 		(instances
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "ev_contactor2")
+					(reference "ev_contactor")
 					(unit 1)
 				)
 			)
@@ -6007,7 +6007,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "58d46be1-cd54-4f36-8343-16a0b19b4f35")
-		(property "Reference" "PreCharge1"
+		(property "Reference" "PreCharge"
 			(at 57.912 50.8 90)
 			(effects
 				(font
@@ -6059,7 +6059,7 @@
 		(instances
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "PreCharge1")
+					(reference "PreCharge")
 					(unit 1)
 				)
 			)
@@ -6074,7 +6074,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "77e3ddac-8fb1-4cfd-8d24-e94eac95239c")
-		(property "Reference" "ev_eth_switch1"
+		(property "Reference" "ev_eth_switch"
 			(at 80.01 63.5 0)
 			(effects
 				(font
@@ -6145,7 +6145,7 @@
 		(instances
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "ev_eth_switch1")
+					(reference "ev_eth_switch")
 					(unit 1)
 				)
 			)
@@ -6160,7 +6160,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8078cfd2-ae80-443f-b3c7-2f9147ca86d9")
-		(property "Reference" "ev_rtk_gps1"
+		(property "Reference" "ev_rtk_gps"
 			(at 105.41 96.52 0)
 			(effects
 				(font
@@ -6221,7 +6221,7 @@
 		(instances
 			(project ""
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "ev_rtk_gps1")
+					(reference "ev_rtk_gps")
 					(unit 1)
 				)
 			)
@@ -6303,7 +6303,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "960db6f0-d151-4c4c-a793-a680203c6ce6")
-		(property "Reference" "ev_dcusbcpd2"
+		(property "Reference" "ev_dcusbcpd"
 			(at 117.094 60.96 0)
 			(effects
 				(font
@@ -6359,7 +6359,7 @@
 		(instances
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "ev_dcusbcpd2")
+					(reference "ev_dcusbcpd")
 					(unit 1)
 				)
 			)
@@ -6374,7 +6374,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a57eba9e-296d-4894-96c0-589e9031535c")
-		(property "Reference" "ev_rc_reciever2"
+		(property "Reference" "ev_rc_reciever"
 			(at 114.3 142.494 0)
 			(effects
 				(font
@@ -6439,7 +6439,7 @@
 		(instances
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "ev_rc_reciever2")
+					(reference "ev_rc_reciever")
 					(unit 1)
 				)
 			)
@@ -6454,7 +6454,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e33015d3-68b2-4e47-882d-2e920e9d44ec")
-		(property "Reference" "ev_bullet1"
+		(property "Reference" "ev_bullet"
 			(at 104.14 54.61 0)
 			(effects
 				(font
@@ -6504,7 +6504,7 @@
 		(instances
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "ev_bullet1")
+					(reference "ev_bullet")
 					(unit 1)
 				)
 			)
@@ -6689,7 +6689,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f13b7b8c-3722-4b90-aaf1-4dfa8debef3b")
-		(property "Reference" "EStop1"
+		(property "Reference" "EStop"
 			(at 107.95 35.052 0)
 			(effects
 				(font
@@ -6748,7 +6748,7 @@
 		(instances
 			(project "AutonomousWiring"
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "EStop1")
+					(reference "EStop")
 					(unit 1)
 				)
 			)
@@ -6763,7 +6763,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f6f4ea02-d9bb-4bb0-83bd-9d4597e78053")
-		(property "Reference" "ev_vesc2"
+		(property "Reference" "ev_vesc"
 			(at 139.954 114.046 0)
 			(effects
 				(font
@@ -6843,7 +6843,7 @@
 		(instances
 			(project ""
 				(path "/f9355d6c-5335-47ee-824d-8b7223514fe3"
-					(reference "ev_vesc2")
+					(reference "ev_vesc")
 					(unit 1)
 				)
 			)
